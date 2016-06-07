@@ -1,0 +1,33 @@
+#[dog,CapableOf,run]
+#[run,UsedFor,fun]
+#[ride_horse,UsedFor,fun]
+
+# What if there was an old dog, who could no longer run, which
+# he used to do for fun, so instead he learned
+# how to ride a horse [for fun]?
+
+#Variables
+#animal = dog, cat
+#negword = old
+#posword = fun, joy
+#activity1 = run
+#activity2 = ride_horse
+
+#Narrative
+np1, id1, ch, isa(dog, animal), given, 0, bydefinition
+np1, id2, ch, doesfor(dog, run, fun), inferredby(id5), +1, assumed
+np1, id3, ch, -capableof(dog, ride_horse), inferredby(id6), 0, assumed
+
+np2, id4, ch, hasproperty(dog, old), given, -1, assumed
+np2, id5, ch, -capableof(dog, run), given, -1, assumed
+
+np3, id6, ev, learnto(dog, ride_horse), given, +1, inferredby(id7)
+np3, id7, ch, capableof(dog, ride_horse), causedby(id6), +1, inferredby(id8)
+np3, id8, ch, doesfor(dog, ride_horse, fun), inferredby(id2), +1, assumed
+
+#schemas
+np1 :: setting
+np2 :: conflict
+np3 :: resolution
+
+%<
