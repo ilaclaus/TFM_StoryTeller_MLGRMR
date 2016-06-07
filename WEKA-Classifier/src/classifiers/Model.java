@@ -1,3 +1,12 @@
+/*
+ * Iván Manuel Laclaustra Yebes
+ * DNI: 50909141-K
+ * Mail: ilaclaus@ucm.es
+ * 
+ * Trabajo de fin de máster en ingeniería informática de la UCM
+ * Generación de Narrativa basada en Criterios de Calidad Aprendidos Automáticamente
+ */
+
 package classifiers;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -32,7 +41,7 @@ public class Model {
 	}
 
 	/*
-	 * Al aplicar BoW debemos tener en cuenta que el archivo "prueba_bow" debe tener las mismas historias que se han 
+	 * Al aplicar BoW debemos tener en cuenta que el archivo "bowizado" debe tener las mismas historias que se han 
 	 * utilizado para calcular los features del set correspondiente (train, test o clasificación). Por tanto, debemos 
 	 * tener 3 archivos BoW, uno para cada conjunto
 	 * 

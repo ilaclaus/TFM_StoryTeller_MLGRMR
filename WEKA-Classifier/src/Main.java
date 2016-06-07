@@ -1,3 +1,12 @@
+/*
+ * Iván Manuel Laclaustra Yebes
+ * DNI: 50909141-K
+ * Mail: ilaclaus@ucm.es
+ * 
+ * Trabajo de fin de máster en ingeniería informática de la UCM
+ * Generación de Narrativa basada en Criterios de Calidad Aprendidos Automáticamente
+ */
+
 import classifiers.Model;
 import weka.classifiers.functions.LibSVM;
 import classifiers.*;
