@@ -139,7 +139,6 @@ public class Model {
 				test_stories.setClassIndex(test_stories.numAttributes() - 1);
 
 			/* APLICAR BAG OF WORDS A LOS CONJUNTOS */
-			// MUY LENTO: INTENTAR OPTIMIZAR
 			bowAtts();
 			setBowValues(training_stories, "Stories_train_set");
 			setBowValues(test_stories, "Stories_test_set");
@@ -194,10 +193,7 @@ public class Model {
 				
 				if (fDistribution[0] != 0) 
 					System.out.println("Instancia: " + i + ", P[interesante] = " + fDistribution[0]);
-				/*
-				else
-					System.out.println("Instancia: " + i + ", P[no_interesante] = " + fDistribution[1]);
-					*/
+
 			}
 		} catch (Exception e) {e.printStackTrace();}
 	}
